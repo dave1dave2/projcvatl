@@ -1,0 +1,42 @@
+<style>
+    .menu {
+    display: flex;              /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+    background-color: #ccc;     /* Ajout de la couleur d'arrière-plan */
+    justify-content: space-evenly;    /* Alignements des liens dans le menu */
+    }
+
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+}
+
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */
+
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: #1ABC9C;    /* Arrière-plan */
+    color: red;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+}
+</style>
+<nav class="waves-effect waves-light btn submitbtn">
+    <ul class="menu">
+        <li>
+            <a href="{{url_for('acceuil')}}"  >Accueil</a>
+        </li>
+        <li>
+            <a href="{{url_for('connexion')}}"  >Connexion</a>
+        </li>
+
+        <li>
+            <a href="{{url_for('compte')}}"  >Creer un compte</a>
+        </li>
+                    
+    </ul>
+</nav>
+

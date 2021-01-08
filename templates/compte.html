@@ -1,0 +1,49 @@
+{% extends "formpage.html" %}
+
+{% block body %}
+
+<div class="container">
+    <div class="form-container z-depth-5">
+        <h3>S'inscrire</h3> 
+        <div class="row">
+            <form class="col s12" id="reused_form" method="POST">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="newuser">Username</label> <br>
+                        <input id="newuser" type="text" name="newuser" required class="validate">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="passw">Password</label><br>
+                        <input id="passw" type="password" name="passw" required class="validate">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="password1">Password</label> <br>
+                        <input id="password1" type="password" name="password1" required class="validate">
+                        
+                    </div>
+                </div>
+                <div>
+                    <button class="waves-effect waves-light btn submitbtn" type="submit">Submit</button>
+                </div>
+            </form>
+            <div id="error_message" style="width:100%; height:100%; display:none; ">
+                <h4>
+                    Error
+                </h4>
+                Sorry there was an error sending your form. 
+            </div>
+            <div id="success_message" style="width:100%; height:100%; display:none; ">
+                <h4>
+                    Success! Your Message was Sent Successfully.
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}   

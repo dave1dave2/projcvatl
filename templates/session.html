@@ -1,0 +1,39 @@
+<style>
+   .button { 
+      display: flex;
+      float: right;
+      text-decoration: none; 
+      align-items: center;
+      
+      margin-right: 10px;
+      padding: 10px 10px 10px;
+      }
+   
+   li
+      {
+         max-width: 120px ;
+         max-height: 120px;
+         list-style-type: none ;
+         padding: 10px 10px 10px;
+         
+      }
+   p
+   {
+      color: white ;
+      font-size: 30px;
+      text-transform: uppercase;
+      word-spacing: 0ch;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      line-height: 80%;
+      
+   }
+ </style>
+ 
+<ul class='button'>
+   <li>
+      <p> {{use}} </p>
+   </li>
+   <li>
+      <a href="{{ url_for('connexion')}}" class ="waves-effect waves-light btn submitbtn" >Logout</a>
+   </li>
+</ul>
